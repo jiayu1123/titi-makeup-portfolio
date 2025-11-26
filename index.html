@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>欢迎来到题题的小世界 | 化妆师 Portfolio</title>
     <style>
+        /* 颜色变量 */
         :root {
             --color-background: #F8F8F8; 
             --color-text-primary: #333333; 
             --color-accent: #CFA6AA; 
         }
+        /* 全局样式 */
         body {
             font-family: 'Arial', 'Helvetica Neue', 'PingFang SC', sans-serif; 
             background-color: var(--color-background);
@@ -20,13 +22,18 @@
             text-align: center;
         }
         .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        
+        /* 导航栏样式 */
         nav { padding: 20px 0; margin-bottom: 60px; }
         nav a { text-decoration: none; color: var(--color-text-primary); margin: 0 30px; font-size: 1.1em; letter-spacing: 1px; transition: color 0.3s; }
         nav a:hover { color: var(--color-accent); }
+        
+        /* 标题和口号样式 */
         h1 { font-family: 'Georgia', serif; font-size: 4em; letter-spacing: 3px; margin-top: 50px; margin-bottom: 20px; }
         h2 { font-size: 1.6em; color: var(--color-text-primary); font-weight: 300; margin-bottom: 40px; }
         .slogan { font-size: 1.1em; margin-bottom: 80px; }
 
+        /* 主视觉区样式 */
         .hero-section { padding: 60px 0; }
         .hero-image {
             max-width: 80%; 
@@ -36,6 +43,7 @@
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); 
         }
 
+        /* 按钮样式 */
         .cta-button {
             display: inline-block;
             padding: 18px 40px;
@@ -51,6 +59,27 @@
         }
         .cta-button:hover { opacity: 0.85; }
 
+        /* ========== 手机端/小屏幕适配 (Media Query) ========== */
+        @media (max-width: 768px) {
+            /* 1. 减小大标题字体，在小屏幕上更紧凑 */
+            h1 {
+                font-size: 2.5em; 
+            }
+            /* 2. 导航链接改为纵向排列，方便点击 */
+            nav {
+                display: flex;
+                flex-direction: column; 
+                gap: 10px;
+                margin-bottom: 40px;
+            }
+            nav a {
+                margin: 5px 0;
+            }
+            /* 3. 主视觉图片在手机上可以占更宽的屏幕 */
+            .hero-image {
+                max-width: 95%; 
+            }
+        }
     </style>
 </head>
 <body>
@@ -70,7 +99,7 @@
         </header>
 
         <section class="hero-section">
-            <img src="4491b92fe7ce684c2f207f4d5800aa61.JPG" alt="题题化妆师主视觉图" class="hero-image">
+            <img src="4491b92fe7ce684c2f207f4d5800aa61.jpg" alt="题题化妆师主视觉图" class="hero-image">
             
             <a href="portfolio.html" class="cta-button">查看我的最新作品</a>
         </section>
