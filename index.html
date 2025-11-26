@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到题题的小世界 | 化妆师 Portfolio</title>
+    <style>
+        :root {
+            --color-background: #F8F8F8; 
+            --color-text-primary: #333333; 
+            --color-accent: #CFA6AA; 
+        }
+        body {
+            font-family: 'Arial', 'Helvetica Neue', 'PingFang SC', sans-serif; 
+            background-color: var(--color-background);
+            color: var(--color-text-primary);
+            margin: 0;
+            padding: 0;
+            line-height: 1.8; 
+            text-align: center;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        nav { padding: 20px 0; margin-bottom: 60px; }
+        nav a { text-decoration: none; color: var(--color-text-primary); margin: 0 30px; font-size: 1.1em; letter-spacing: 1px; transition: color 0.3s; }
+        nav a:hover { color: var(--color-accent); }
+        h1 { font-family: 'Georgia', serif; font-size: 4em; letter-spacing: 3px; margin-top: 50px; margin-bottom: 20px; }
+        h2 { font-size: 1.6em; color: var(--color-text-primary); font-weight: 300; margin-bottom: 40px; }
+        .slogan { font-size: 1.1em; margin-bottom: 80px; }
+
+        .hero-section { padding: 60px 0; }
+        .hero-image {
+            max-width: 80%; 
+            height: auto;
+            display: block;
+            margin: 60px auto; 
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); 
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 18px 40px;
+            margin-top: 40px;
+            background-color: var(--color-accent);
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            font-size: 1.1em;
+            transition: opacity 0.3s;
+        }
+        .cta-button:hover { opacity: 0.85; }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="index.html">首页</a>
+            <a href="#">关于题题</a>
+            <a href="portfolio.html">作品集</a>
+            <a href="contact.html">联系我</a>
+        </nav>
+
+        <header>
+            <h1>欢迎来到题题的小世界！</h1>
+            <h2>我是一位化妆师</h2>
+            <p class="slogan">发现美，创造美，让每一刻都闪耀光芒。</p>
+        </header>
+
+        <section class="hero-section">
+            <img src="4491b92fe7ce684c2f207f4d5800aa61.jpg" alt="题题化妆师主视觉图" class="hero-image">
+            
+            <a href="portfolio.html" class="cta-button">查看我的最新作品</a>
+        </section>
+
+        <section style="margin-top: 80px; padding-bottom: 120px; font-size: 1.1em;">
+            <h3>我的理念</h3>
+            <p style="max-width: 800px; margin: 30px auto; line-height: 2;">
+                我相信化妆不仅仅是色彩的堆叠，更是一种表达自我、提升自信的艺术。无论是日常妆容、时尚造型，还是活动定制，我致力于发掘和呈现每一个人独特的美。
+                <br>让我们一起，探索无限可能的美丽。
+            </p>
+        </section>
+
+    </div>
+
+</body>
+</html>

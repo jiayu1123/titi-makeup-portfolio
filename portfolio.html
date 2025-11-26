@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品集 | 题题的小世界</title>
+    <style>
+        :root {
+            --color-background: #F8F8F8; 
+            --color-text-primary: #333333; 
+            --color-accent: #CFA6AA; 
+        }
+        body {
+            font-family: 'Arial', 'Helvetica Neue', 'PingFang SC', sans-serif; 
+            background-color: var(--color-background);
+            color: var(--color-text-primary);
+            margin: 0;
+            padding: 0;
+            line-height: 1.8; 
+            text-align: center;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        nav { padding: 20px 0; margin-bottom: 60px; border-bottom: 1px solid #E0E0E0; }
+        nav a { text-decoration: none; color: var(--color-text-primary); margin: 0 30px; font-size: 1.1em; letter-spacing: 1px; transition: color 0.3s; }
+        nav a:hover { color: var(--color-accent); }
+        h1 { font-family: 'Georgia', serif; font-size: 3em; letter-spacing: 2px; margin-bottom: 80px; padding-top: 20px; }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+            gap: 40px; 
+            padding-bottom: 80px;
+        }
+        .item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        .item img:hover { transform: scale(1.02); }
+        .item-category { font-size: 1em; color: #888; margin-top: 10px; text-align: left; padding-left: 5px; }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="index.html">首页</a>
+            <a href="#">关于题题</a>
+            <a href="portfolio.html">作品集</a>
+            <a href="contact.html">联系我</a>
+        </nav>
+
+        <h1>我的化妆作品精选</h1>
+
+        <div class="portfolio-grid">
+
+            <div class="item"><img src="4491b92fe7ce684c2f207f4d5800aa61.jpg" alt="质感时尚造型"><p class="item-category">质感时尚 / 造型一</p></div>
+            <div class="item"><img src="e1a8426e73028cb2668212349e0efd05.jpg" alt="甜美清新妆容"><p class="item-category">甜美清新 / 柔光系列</p></div>
+            <div class="item"><img src="c62e60fa405b2266c9ece2586b877a4f.jpg" alt="甜美夹手造型"><p class="item-category">甜美清新 / 侧颜</p></div>
+            <div class="item"><img src="4b0f811bb4497135354b9f28ca4c5934.JPG" alt="日常造型"><p class="item-category">日常生活 / 冬季暖调</p></div>
+            <div class="item"><img src="2105704aeba4d1d975b268f8e23da994.jpg" alt="室内暖调妆容"><p class="item-category">甜美清新 / 暖光</p></div>
+            <div class="item"><img src="4b9e0b6109f2648f17dbb05f2db451a3.jpg" alt="梳头造型"><p class="item-category">造型准备 / 细节</p></div>
+            <div class="item"><img src="IMG_4804.jpg" alt="猫咪和美甲"><p class="item-category">日常生活 / 猫咪与美甲</p></div>
+            
+            </div>
+
+    </div>
+
+</body>
+</html>
